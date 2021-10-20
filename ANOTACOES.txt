@@ -1,0 +1,36 @@
+GETs:
+
+http://localhost:8080/topicos
+http://localhost:8080/topicos/3
+http://localhost:8080/topicos?nomeCurso=HTML+5
+
+POST:
+----
+http://localhost:8080/topicos
+
+Headers(sugestão de mudança para ingles para receber mensagens de erro em inglês): 
+	Content-Type: application/json
+	Accept-Language: en-US
+
+{
+    "titulo": "testando",
+    "mensagem": "teste felipe",
+    "nomeCurso": "Spring Boot"
+}
+
+----
+
+PUT:
+http://localhost:8080/topicos/3
+Headers:
+	content-type: application/json
+
+{
+    "titulo": "testando",
+    "mensagem": "Modificado"
+}
+
+----
+
+DELETE:
+http://localhost:8080/topicos/3
